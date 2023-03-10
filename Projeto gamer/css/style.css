@@ -1,7 +1,18 @@
 *{
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+}
+.layout-grid{
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.alinhamento-between-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 body {
@@ -9,7 +20,35 @@ body {
 }
 
 header {
-    height: 128px;
     background-color: #1b1426;
+    height: 60px;
 }
+
+header .Header-top{
+    display: none;
+}
+header .Header-bottom{
+    height: 60px;
+}
+
+header #logo{
+    width: 86px;
+
+}
+header nav{
+    position: fixed;
+    top: 60px;
+    width: 80vw;
+    height: 100vw;
+    background-color: gray;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header .menu-usuarios{
+    display: none;
+}
+
+
 
