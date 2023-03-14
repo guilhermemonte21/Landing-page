@@ -43,14 +43,14 @@
         <div class="Header-bottom">
             <div class="layout-grid alinhamento-between-center">
 
-                <img src="assets/icons/menu hamburguer.svg"
+                <img onclick="mostrarMenu()" src="assets/icons/menu hamburguer.svg"
                     alt="icone de telefone. Abre e fecha o menu principal no celular">
 
 
                 <img class="logo" src="assets/icons/logotipo-gamer.svg"
                     alt="Imagem logotipo gamer com um controle de video game ao centro">
 
-                <nav class="menu">
+                <nav class="menu" id="menu">
                     <a href="">Inicio</a>
                     <a href="">Jogadores</a>
                     <a href="">equipes</a>
@@ -76,13 +76,13 @@
                         </a>
                     </div>
                 </nav>
-                <img src="assets/icons/tres pontinhos.svg" alt="tres pontinhos que abrem as options">
+                <img onclick="mostrarOptions()" src="assets/icons/tres pontinhos.svg" alt="tres pontinhos que abrem as options">
 
 
             </div>
 
         </div>
-        <div class="menu-usuarios">
+        <div class="menu-usuarios" id="usuarios">
             <a href="">
                 <img src="assets/icons/perfil.svg" alt="icone de perfil">
             </a>
@@ -102,6 +102,21 @@
 
 
     </header>
+    <main>
+        <img class="banner-inicio" src="assets/valorant-pergunte-3-scaled 1.png" alt="banner-inicio">
+    </main>
+    
+    <script>
+        function mostrarMenu() {
+            document.getElementById("menu").classList.toggle("mostrar-menu");
+        }
+    </script>
+
+    <script>
+        function mostrarOptions() {
+            document.getElementById("usuarios").classList.toggle("mostrar-options")
+        }
+    </script>
 
 </body>
 
