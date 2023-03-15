@@ -1,3 +1,18 @@
+@font-face {
+    font-family: Inter;
+    src: url(../assets/fonts/Inter/static/Inter-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: Quicksnad;
+    src: url(../assets/fonts/Quicksand/static/Quicksand-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: Titillium_Web;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+  }
+
 *{
     padding: 0;
     margin: 0;
@@ -31,6 +46,8 @@ header {
     position: fixed;
     z-index: 100;
     width: 100vw;
+    top: 0;
+    left: 0;
 }
 
 header .Header-top{
@@ -107,15 +124,62 @@ header .Header-bottom nav .midias-sociais{
     gap: 30px;
     
 }
-main .banner-inicio{
+
+main{
+    margin-top: 60px;
+}
+
+main .title{
     background-image: url(../assets/valorant-pergunte-3-scaled\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     top: 60px;
     height: 605px;
     width: 100%;
-    position: absolute;
+    /* position: fixed; */
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
+
+main .title h1{
+    display: flex;
+    
+    
+    
+    text-shadow: 0 0 7px #fd4255;
+    
+    font-size: 40px;
+    font-family: Titillium_Web;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    
+}
+
+main .botao{
+    display: flex;
+    
+    height: 40px;
+    width: 171px;
+    color: black;
+    background-color: #F9AA01;
+    border-radius: 9px;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    
+    
+}
+
+main .jogos-flex{
+    background-color: #1b1426;
+    justify-content: space-between;
+}
+ 
+
 
 
 
