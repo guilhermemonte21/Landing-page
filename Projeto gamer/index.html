@@ -5,65 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Gamer</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Projeto Gamer Tarde</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header>
-        <div class="Header-top">
+        <div class="header-top">
             <div class="layout-grid">
 
                 <div class="contatos">
                     <div class="phone">
-                        <img src="assets/icons/icone_telefone.svg" alt="Icon do telefone de contato">
-                        <p>(11)0900-1010</p>
+                        <img src="assets/icons/icone_telefone.svg" alt="Ícone do telefone de contato">
+                        <span>(11) 0900-1010</span>
                     </div>
                     <div class="mail">
-                        <img src="assets/icons/icone_email.svg" alt="Icon de email de contato">
-                        <p>contato@gamer.com.br</p>
+                        <img src="assets/icons/icone_email.svg" alt="Ícone de email de contato">
+                        <span>contato@gamer.com.br</span>
                     </div>
                 </div>
-            </div>
-            <div class="midias-sociais">
-                <a href="">
-                    <img src="assets/icons/Vector (1).svg" alt="Imagem link do facebook da empresa">
-                </a>
-                <a href="">
-                    <img src="assets/icons/Vector.svg" alt="Imagem link do Linkedin da empresa">
-                </a>
-                <a href="">
-                    <img src="assets/icons/insta.svg" alt="Imagem link do Instagram da empresa">
-                </a>
+
+                <div class="midias-sociais">
+                    <a href="">
+                        <img src="assets/icons/Vector (1).svg" alt="Imagem link do facebook da empresa">
+                    </a>
+                    <a href="">
+                        <img src="assets/icons/Vector.svg" alt="Imagem link do Linkedin da empresa">
+                    </a>
+                    <a href="">
+                        <img src="assets/icons/insta.svg" alt="Imagem link do instagram da empresa">
+                    </a>
+                </div>
             </div>
         </div>
 
-
-        </div>
-        <div class="Header-bottom">
+        <div class="header-bottom">
             <div class="layout-grid alinhamento-between-center">
-
-                <img onclick="mostrarMenu()" src="assets/icons/menu hamburguer.svg"
-                    alt="icone de telefone. Abre e fecha o menu principal no celular">
-
+                <!-- Menu Hamburger. Visível apenas no smartphone -->
+                <img class="menu-hamburger" onclick="mostrarMenu()" src="assets/icons/menu hamburguer.svg"
+                    alt="Ícone de Telefone. Abre e fecha o menu principal, no celular">
 
                 <img class="logo" src="assets/icons/logotipo-gamer.svg"
-                    alt="Imagem logotipo gamer com um controle de video game ao centro">
+                    alt="Imagem logotipo gamer com um controle de vídeo game ao centro">
 
                 <nav class="menu" id="menu">
-                    <a href="">Inicio</a>
+                    <a href="">Início</a>
                     <a href="">Jogadores</a>
-                    <a href="">equipes</a>
-                    <a href="">Noticias</a>
+                    <a href="">Equipes</a>
+                    <a href="">Notícias</a>
 
+                    <!-- vísível apenas no mobile -->
                     <a class="phone">
-                        <img src="assets/icons/icone_telefone.svg" alt="Icon do telefone de contato">
-                        <p>(11)0900-1010</p>
+                        <img src="assets/icons/icone_telefone.svg" alt="Ícone do telefone de contato">
+                        <p>(11) 0900-1010</p>
                     </a>
                     <a class="mail">
-                        <img src="assets/icons/icone_email.svg" alt="Icon de email de contato">
+                        <img src="assets/icons/icone_email.svg" alt="Ícone de email de contato">
                         <p>contato@gamer.com.br</p>
                     </a>
+
+
                     <div class="midias-sociais">
                         <a href="">
                             <img src="assets/icons/Vector (1).svg" alt="Imagem link do facebook da empresa">
@@ -72,68 +73,61 @@
                             <img src="assets/icons/Vector.svg" alt="Imagem link do Linkedin da empresa">
                         </a>
                         <a href="">
-                            <img src="assets/icons/insta.svg" alt="Imagem link do Instagram da empresa">
+                            <img src="assets/icons/insta.svg" alt="Imagem link do instagram da empresa">
                         </a>
                     </div>
                 </nav>
-                <img onclick="mostrarOptions()" src="assets/icons/tres pontinhos.svg"
-                    alt="tres pontinhos que abrem as options">
 
+                <!-- menu 3 pontinhos -->
+                <img class="menu-pontinhos" onclick="mostrarUsuarios()" src="assets/icons/tres pontinhos.svg"
+                    alt="Ícone 3 pontinhos, abre e fecha o menu de usuários">
 
+                <div id="menu-usuarios" class="menu-usuarios">
+                    <a href="">
+                        <img src="assets/icons/perfil.svg" alt="Ícone de perfil">
+                    </a>
+                    <a href="">
+                        <img src="assets/icons/shop.svg" alt="Ícone de sacola">
+                    </a>
+                    <a href="">
+                        <img src="assets/icons/lupa.svg" alt="Ícone lupa de pesquisa">
+                    </a>
+                </div>
             </div>
-
         </div>
-        <div class="menu-usuarios" id="usuarios">
-            <a href="">
-                <img src="assets/icons/perfil.svg" alt="icone de perfil">
-            </a>
-            <a href="">
-                <img src="assets/icons/shop.svg" alt="icone de sacola">
-            </a>
-            <a href="">
-                <img src="assets/icons/lupa.svg" alt="icone lupa de pesquisa">
-            </a>
-
-
-        </div>
-        </div>
-
-
-        </div>
-
-
     </header>
-    <main>
-        <article class="title">
-            <h1>Liga Gamers</h1>            
 
-            <a href="" class="botao">Sobre</a>
+    <main>
+        <article class="banner">
+            <h1>Liga Gamers</h1>
+            <a href="" class="btn-sobre">Sobre</a>
         </article>
+
 
         <section class="jogos">
             <div class="layout-grid jogos-flex">
-            
-                <img src="./assets/Card-FIFA.png" alt="Imagem do jogo Fifa 2023">
-           
-                <img src="./assets/Card-CS GO.png" alt="Imagem do jogo Counter-strike global offensive">
+                <img src="assets/Card-FIFA.png" alt="Imagem do jogo Fifa 2023">
+                <img src="assets/Card-CS GO.png" alt="Imagem do jogo Counter Strike">
             </div>
+
         </section>
-
-
     </main>
 
+    <footer></footer>
+
+
     <script>
+
         function mostrarMenu() {
+            // pega a navbar pelo id
             document.getElementById("menu").classList.toggle("mostrar-menu");
         }
-    </script>
 
-    <script>
-        function mostrarOptions() {
-            document.getElementById("usuarios").classList.toggle("mostrar-options")
+        function mostrarUsuarios() {
+            document.getElementById("menu-usuarios").classList.toggle("mostrar-usuarios");
         }
-    </script>
 
+    </script>
 </body>
 
 </html>
