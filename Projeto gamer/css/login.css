@@ -25,9 +25,9 @@
 /* Classes Genéricas */
 .layout-grid {
     width: 90%;
-    height: 100%;
+    max-width: 768px;
     margin: 0 auto;
-    /* border: 1px solid salmon; */
+    border: 1px solid salmon;
 }
 
 .mostrar-menu {
@@ -61,6 +61,7 @@ header {
     height: 60px;
     z-index: 100;
     background-color: #1B1426;
+    
 }
 
 header .header-top {
@@ -141,71 +142,7 @@ header .menu-usuarios {
     align-items: center;
 }
 
-
-/* MAIN */
-
-main {
-    margin-top: 0px;
-}
-
-/* Banner */
-
-main .banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 606px;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    background-image: url(../assets/valorant-pergunte-3-scaled\ 1.png);
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    margin-top: 60px;
-}
-
-main .banner h1 {
-    font-family: TitilliumWeb-Black;
-    font-size: 40px;
-    text-shadow: 0 0 7px #FD4255;
-}
-
-main .banner a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 40px;
-    font-family: TitilliumWeb-Bold;
-    font-size: 24px;
-    color: black;
-    text-decoration: none;
-    background-color: #F9AA01;
-    border-radius: 8px;
-}
-
-/* Sessão Jogos */
-
-main .jogos {
-    width: 100%;
-    height: 590px;
-    background-color: #1B1426;
-}
-
-main .jogos .jogos-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-
-/* Tablets >= 768px */
-@media screen and (min-width: 768px) {}
-
-/* Desktop >= 1200px*/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width:1200px) {
     .layout-grid {
         width: 100%;
         max-width: 1200px;
@@ -283,52 +220,130 @@ main .jogos .jogos-flex {
         
         justify-content: space-between;
 }
-}
 
-/* main */
-
-main {
-    margin-top: 0px;
-}
-
-main .banner{
+main{
+    
     margin-top: 0;
-    background-image: url(../assets/icons/banner\ home\ desktop.png);
-    height: 822px;
+    background-image: url(../assets/banner\ login.png);
+    background-size: cover;
+    background-position: top;
+    height: 680px;
+    
+    
 }
 
-main .jogos .jogos-flex{
-    flex-direction: row;
-    justify-content: space-between;
+main .login{
+    height: 680px;
+    
     align-items: center;
-    height: 500px;
 }
 
-main .jogos img{
-    width: 556px;
-    height: 313px;
+
+
+.frm-login{
+    width: 800px;
+    height: 520px;
+    background-image: linear-gradient(to right bottom, rgba(255,255,255, .5), rgba(255,255,255, .0));
+    margin-top: 66px;
+    margin-left: 203px;
+    border-width: 1px;
+    backdrop-filter: blur(6px);
+}
+.frm-login h1{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 65px;
+    font-size: 40px;
     
 }
-main .btn-sobre{
-    margin-bottom: 69px;
+.frm-login .login-title{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.frm-login .login-title hr{
+    width: 100px;
+    border-color: #F9AA01;
+    margin-left: 350px;
+    border-width: 3px;
     
 }
-main .banner h1{
-    margin-top: 60px;
-    font-size: 80px;
-    text-shadow: 0 0 7px #FD4255;
-    backdrop-filter: blur(7px);
+.box{
+    margin-top: 68px;
+    
+      /* content */
+      background-image: ( to right bottom, rgba(239, 239, 239, 0.60), rgba(239, 239, 239, 0.10) ) content-box, 
+      /* border */
+    
 }
 
-main .progamer{
+.box input{
     width: 100%;
-    height: 1000px;
-    background-color: #F9AA01;
+            height: 30px;
+            /* background-color: transparent;
+            border: ;
+            outline: none; */
+
+            /* efeito da borda e do fundo glass */
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background:
+        /* fundo */
+        linear-gradient(to right bottom, rgba(27, 20, 38, .6), rgba(60, 3, 65, .38)) padding-box,
+        /* fundo borda */
+        linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;
+    backdrop-filter: blur(4px);
+
+
+           
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+
+}   
+
+.email{
+    
+    background: linear-gradient(to right bottom, rgba(27, 20, 38, .6), rgba(60, 3, 65, .38)) padding-box,;
+    
+    margin-left: 118px;
+    width: 565px;
+    height: 40px;
+    
+    
 }
 
+#email{
+    padding-left: 48px;
+    align-items: center;
+    height: 40px;
+    width: 565px;
+    
+}
+.icon-perfil{
+    border: 1px solid black;
+}
+.icon-chave{
 
-main .progamer article{
-    width: 585px;
-    height: 700px;
 }
 
+.email > input::placeholder{
+    color: white;
+    
+}
+
+#senha{
+    margin-top: 46px;
+    height: 40px;
+    width: 565px;
+    margin-left: 118px;
+    border: 1 solid yellow;
+    
+    
+}
+
+.senha > input::placeholder{
+    color: white;
+}
+
+}
+  

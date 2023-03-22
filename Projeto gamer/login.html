@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="layout-grid alinhamento-between-center">
+
+                <div class="contatos">
+                    <div class="phone">
+                        <img src="assets/icons/icone_telefone.svg" alt="Ícone do telefone de contato">
+                        <span>(11) 0900-1010</span>
+                    </div>
+                    <div class="mail">
+                        <img src="assets/icons/icone_email.svg" alt="Ícone de email de contato">
+                        <span>contato@gamer.com.br</span>
+                    </div>
+                </div>
+
+                <div class="midias-sociais">
+                    <a href="">
+                        <img src="assets/icons/Vector (1).svg" alt="Imagem link do facebook da empresa">
+                    </a>
+                    <a href="">
+                        <img src="assets/icons/Vector.svg" alt="Imagem link do Linkedin da empresa">
+                    </a>
+                    <a href="">
+                        <img src="assets/icons/insta.svg" alt="Imagem link do instagram da empresa">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="layout-grid alinhamento-between-center">
+                <!-- Menu Hamburger. Visível apenas no smartphone -->
+                <img class="menu-hamburger" onclick="mostrarMenu()" src="assets/icons/menu hamburguer.svg"
+                    alt="Ícone de Telefone. Abre e fecha o menu principal, no celular">
+
+                <img class="logo" src="assets/icons/logotipo-gamer.svg"
+                    alt="Imagem logotipo gamer com um controle de vídeo game ao centro">
+
+                <nav class="menu" id="menu">
+                    <a href="">Início</a>
+                    <a href="">Jogadores</a>
+                    <a href="">Equipes</a>
+                    <a href="">Notícias</a>
+
+                    <!-- vísível apenas no mobile -->
+                    <a class="phone">
+                        <img src="assets/icons/icone_telefone.svg" alt="Ícone do telefone de contato">
+                        <p>(11) 0900-1010</p>
+                    </a>
+                    <a class="mail">
+                        <img src="assets/icons/icone_email.svg" alt="Ícone de email de contato">
+                        <p>contato@gamer.com.br</p>
+                    </a>
+
+
+                    <div class="midias-sociais">
+                        <a href="">
+                            <img src="assets/icons/Vector (1).svg" alt="Imagem link do facebook da empresa">
+                        </a>
+                        <a href="">
+                            <img src="assets/icons/Vector.svg" alt="Imagem link do Linkedin da empresa">
+                        </a>
+                        <a href="">
+                            <img src="assets/icons/insta.svg" alt="Imagem link do instagram da empresa">
+                        </a>
+                    </div>
+                </nav>
+
+                <!-- menu 3 pontinhos -->
+                <img class="menu-pontinhos" onclick="mostrarUsuarios()" src="assets/icons/tres pontinhos.svg"
+                    alt="Ícone 3 pontinhos, abre e fecha o menu de usuários">
+
+                <div id="menu-usuarios" class="menu-usuarios">
+                    <a href="">
+                        <img src="assets/icons/perfil.svg" alt="Ícone de perfil">
+                    </a>
+                    <a href="">
+                        <img src="assets/icons/shop.svg" alt="Ícone de sacola">
+                    </a>
+                    <a href="">
+                        <img src="assets/icons/lupa.svg" alt="Ícone lupa de pesquisa">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+        <main>
+            <div class="login layout-grid">
+            <form class="frm-login">
+            <div class="login-title">
+                <hr class="line">
+                <h1>Login</h1>
+            </div>
+                <div class="box">
+                    <div class="email">
+                    <img class="icon-perfil"src="assets/icons/perfilzinho.svg" alt="Icon de usuario">
+                    <input type="email" id="email" placeholder="Digite seu E-mail" >
+                    
+                    </div>
+                  <div class="senha">
+                    <img class="icon-chave" src="assets/icons/chavinha.svg" alt="icon de chavinha">
+                    <input type="senha" id="senha" placeholder="Digite sua Senha">
+                 </div>
+                </div>
+            
+            
+            </form>
+        </div>
+        </main>
+    <footer></footer>
+
+    <script>
+
+        function mostrarMenu() {
+            // pega a navbar pelo id
+            document.getElementById("menu").classList.toggle("mostrar-menu");
+        }
+
+        function mostrarUsuarios() {
+            document.getElementById("menu-usuarios").classList.toggle("mostrar-usuarios");
+        }
+
+    </script>
+    
+</body>
+</html>
