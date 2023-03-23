@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Formulario de login</title>
     <link rel="stylesheet" href="css/login.css">
 </head>
+
 <body>
     <header>
         <div class="header-top">
@@ -94,30 +96,126 @@
             </div>
         </div>
     </header>
-        <main>
-            <div class="login layout-grid">
+    <main>
+        <div class="login layout-grid">
             <form class="frm-login">
-            <div class="login-title">
-                <hr class="line">
-                <h1>Login</h1>
-            </div>
+                <div class="login-title">
+                    <h1>Login</h1>
+                    <hr class="line">
+                    
+                </div>
                 <div class="box">
                     <div class="email">
-                    <img class="icon-perfil"src="assets/icons/perfilzinho.svg" alt="Icon de usuario">
-                    <input type="email" id="email" placeholder="Digite seu E-mail" >
-                    
+                        <img class="icon-perfil" src="assets/icons/perfilzinho.svg" alt="Icon de usuario">
+                        <input type="email" id="email" placeholder="Digite seu E-mail">
+
                     </div>
-                  <div class="senha">
-                    <img class="icon-chave" src="assets/icons/chavinha.svg" alt="icon de chavinha">
-                    <input type="senha" id="senha" placeholder="Digite sua Senha">
-                 </div>
+                    <div class="senha">
+                        <img class="icon-chave" src="assets/icons/chavinha.svg" alt="icon de chavinha">
+                        <input type="password" id="senha" placeholder="Digite sua Senha">
+                    </div>
                 </div>
-            
-            
+
+                <button class="btn-log" type="button">Logar</button>
+
+
             </form>
         </div>
-        </main>
-    <footer></footer>
+    </main>
+    <footer> 
+        <div class="layout-grid footer-top">
+            
+            <div id="sobre">
+                <img src="./assets/icons/logotipo-gamer.svg" alt="Logotipo, imagem com texto gamer e um controle de vídeo game ao centro">
+                
+                <p>Nosso sucesso na criação de soluções de negócios se deve em grande parte à nossa equipe talentosa e altamente comprometida.</p>
+
+                <!-- exportar as imagens do figma! -->
+                <div id="midias-sociais-footer">
+                    <a href="">
+                        <img src="./assets/icone_facebook.svg" alt="Ícone do Facebook">
+                    </a>
+                    <a href="">
+                        <img src="./assets/icone_linkedin.svg" alt="Ícone do Linkedin">
+                    </a>
+                    <a href="">
+                        <img src="./assets/icone_intagram.svg" alt="Ícone do Instagram">
+                    </a>
+                </div>
+            </div>
+
+            <div id="links-uteis">
+                <div class="titulos-footer">
+                    <h3>Links Úteis</h3>
+                    <hr>
+                </div>
+
+                <ul class="menu-footer">
+                    <li>
+                        <a href="">Início</a>
+                    </li>
+                    <li>
+                        <a href="">Jogadore</a>
+                    </li>
+                    <li>
+                        <a href="">Notícias</a>
+                    </li>
+                    <li>
+                        <a href="">Login</a>
+                    </li>
+                    <li>
+                        <a href="">Equipes</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div id="contatos">
+                <div class="titulos-footer">
+                    <h3>Contatos</h3>
+                    <hr>
+                </div>
+
+                <p>
+                    <span class="contatos-titulo">Localização:</span>
+                    Rua Niterói, 180 - São Caetano do Sul- SP
+                </p>
+
+                <p>
+                    <span class="contatos-titulo">Junte-se a nós:</span>
+                    contato@gamer.com.br
+                </p>
+
+                <p>
+                    <span class="contatos-titulo">Telefone:</span>
+                    (11) 0900-1010
+                </p>
+            </div>
+
+
+
+            <div id="newsletter">
+                <div class="titulos-footer">
+                    <h3>Newsletter</h3>
+                    <hr>
+                </div>
+
+                <form action="" class="frm-news">
+                    <input type="email" placeholder="Digite seu e-mail">
+                    <button>Enviar</button>
+                </form>
+            </div>
+            
+        </div> <!-- fim da footer-top -->
+        
+
+        <div class="layout-grid footer-bottom">
+            <p id="rights">&copy;Todos os diretos reservados</p>
+        </div>
+
+        <img src="./assets/icons/back-to-top.svg" alt="Ícone com a seta para cima, clique para voltar ao topo">
+
+    </footer>
 
     <script>
 
@@ -131,6 +229,7 @@
         }
 
     </script>
-    
+
 </body>
+
 </html>
