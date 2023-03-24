@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Equipes</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/equipes.css">
 </head>
+
 <body>
     <header>
         <div class="header-top">
@@ -94,6 +96,35 @@
             </div>
         </div>
     </header>
-    
+    <main>
+        <div class="equipes layout-grid">
+            <form class="frm-equipes">
+                <div class="equipe-title">
+                    <h1>Cadastro de equipes</h1>
+                    <hr class="teams-line">
+                </div>
+
+                <div class="formulario">
+                    <div class="id-equipe">
+                        <input type="id" id="id" placeholder="Digite o Id da sua equipe:">
+                    </div>
+
+                    <div class="nome-equipe">
+                        <input type="name" id="name" placeholder="Digite o nome da sua equipe:">
+                    </div>
+                </div>
+                
+                <div class="input-file">
+                    <label for="inputFile" class="input-file">
+                        Imagem da equipe
+                    </label>
+                    <input type="file" name="inputFile" id="input-files" placeholder="Imagem da Equipe">
+                </div>
+                <button class="btn-teams" type="button">Cadastrar</button>
+            </form>
+
+        </div>
+    </main>
 </body>
+
 </html>

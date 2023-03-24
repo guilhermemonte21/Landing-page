@@ -139,4 +139,219 @@ header .menu-usuarios {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}@media screen and (min-width:1200px) {
+    .layout-grid {
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    header {
+        position: static;
+        height: 120px;
+        width: 100%;
+    }
+
+    header .header-top {
+        display: block;
+        height: 50px;
+        border-bottom: 2px solid #F9AA01;
+    }
+
+    header .header-top .contatos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 450px;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: Inter;
+    }
+
+    header .header-top .contatos>div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 200px;
+
+    }
+
+    header .header-top .midias-sociais {
+        width: 140px;
+        display: flex;
+        justify-content: space-between;
+        border: #FD4255;
+    }
+
+
+
+    /* esconde os elementos desnecessários */
+    header .header-bottom .menu-hamburger,
+    header .header-bottom .menu-pontinhos,
+    header .header-bottom nav .phone,
+    header .header-bottom nav .mail,
+    header .header-bottom nav .midias-sociais {
+        display: none;
+    }
+
+    header .logo {
+        width: 200px;
+    }
+
+
+    header .header-bottom nav {
+        position: static;
+        width: 440px;
+        height: 50px;
+        padding-bottom: 0;
+        flex-direction: row;
+        align-items: center;
+
+        justify-content: space-between;
+    }
+
+    header .header-bottom nav>a {
+        font-size: 15px;
+        padding: 0;
+        border: none;
+    }
+
+    header .header-bottom .menu-usuarios {
+        position: static;
+        width: 140px;
+        flex-direction: row;
+        height: auto;
+        background-color: transparent;
+        background-image: none;
+
+        justify-content: space-between;
+    }
+    main{
+        background-image: url(../assets/banner_cadastro_de_equipe.png);
+        height: 1372px;
+    }
+    .equipes{
+        height: 1372px;
+        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+    }
+    .frm-equipes{
+        display: flex;
+        width: 800px;
+        height: 530px;
+        background-image: linear-gradient(to right bottom, rgba(255, 255, 255, .5), rgba(255, 255, 255, .0));
+        border-width: 1px;
+        backdrop-filter: blur(6px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 81px;
+        
+    }
+    .equipe-title{
+        margin-bottom: 80px;
+        margin-top:70px ;
+    }
+    .formulario{
+        background-image: (to right bottom, rgba(239, 239, 239, 0.60), rgba(239, 239, 239, 0.10)) content-box,
+    }
+    .formulario input{
+        width: 100%;
+        height: 30px;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .id-equipe{
+        display: flex;
+        justify-content: space-between;
+        border-radius: 8px;
+        width: 565px;
+        height: 40px;
+        padding-left: 5px;        
+        background-color:
+          
+            linear-gradient(to right bottom, rgba(27, 20, 38, .6), rgba(60, 3, 65, .38)) padding-box,
+           
+            linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;
+        backdrop-filter: blur(4px);     
+        margin-bottom: 41px;
+    }
+    .id-equipe>input::placeholder {
+        color: white;
+
+    }
+    #id{
+        border: none;
+        outline: none;
+        width: 90%;
+        height: 40px;
+        background-color: transparent;
+    }
+    .nome-equipe{
+        display: flex;
+        height: 40px;
+        width: 565px;
+        /* border: 1px solid red; */
+        border-radius: 8px;
+        padding-left: 5px;
+        justify-content: space-between;    
+        background-color:
+          
+            linear-gradient(to right bottom, rgba(27, 20, 38, .6), rgba(60, 3, 65, .38)) padding-box,
+           
+            linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;
+        backdrop-filter: blur(4px);
+        margin-bottom: 27px;
+    }
+    .nome-equipe>input::placeholder {
+        color: white;
+
+    }
+    #name{
+        height: 40px;
+        width: 90%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+    
+    .input-file{
+        display: flex;
+        margin-bottom: 53px;
+        width: 376px;
+        height: 40px;
+    }
+    .input-file label{
+    display: flex !important;
+    background-color: #D9D9D9 !important;
+    border-radius: 8px !important;
+    color:#1B1426 !important;
+    font-size: 24px !important;
+    padding: 10px !important;
+    width: 376px !important;
+    height: 40px !important;
+    margin-left: -93px !important;
+    padding-bottom: 1px !important;
+    padding-left: 71px !important;
+    } 
+    #input-files{
+        display: none;
+    }
+    
+
+    
+    .btn-teams{  margin-bottom: 103px;
+        width: 243px;
+        height: 40px;
+        border-radius: 8px;
+        background-color:#F9AA01 ;
+        color: #1B1426;
+        font-size: 24px;
+        font-family: titillium_web;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        margin-bottom: 59px;
+    } 
 }
+

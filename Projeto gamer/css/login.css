@@ -536,7 +536,7 @@ footer #newsletter button {
 
     main .login {
         height: 680px;
-        border: 1px solid red;
+        
         display: flex;
         justify-content: center;
 
@@ -692,6 +692,6 @@ footer #newsletter button {
         font-weight: bold;
         border: none;
         outline: none;
-    }
+    } 
 
 }
