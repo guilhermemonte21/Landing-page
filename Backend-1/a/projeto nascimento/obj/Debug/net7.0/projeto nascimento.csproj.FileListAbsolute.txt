@@ -1,0 +1,15 @@
+C:\Users\6352573355\Desktop\projeto nascimento\bin\Debug\net7.0\projeto nascimento.exe
+C:\Users\6352573355\Desktop\projeto nascimento\bin\Debug\net7.0\projeto nascimento.deps.json
+C:\Users\6352573355\Desktop\projeto nascimento\bin\Debug\net7.0\projeto nascimento.runtimeconfig.json
+C:\Users\6352573355\Desktop\projeto nascimento\bin\Debug\net7.0\projeto nascimento.dll
+C:\Users\6352573355\Desktop\projeto nascimento\bin\Debug\net7.0\projeto nascimento.pdb
+C:\Users\6352573355\Desktop\projeto nascimento\obj\Debug\net7.0\projeto nascimento.csproj.AssemblyReference.cache
+C:\Users\6352573355\Desktop\projeto nascimento\obj\Debug\net7.0\projeto nascimento.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\6352573355\Desktop\projeto nascimento\obj\Debug\net7.0\projeto nascimento.AssemblyInfoInputs.cache
+C:\Users\6352573355\Desktop\projeto nascimento\obj\Debug\net7.0\projeto nascimento.AssemblyInfo.cs
+C:\Users\6352573355\Desktop\projeto nascimento\obj\Debug\net7.0\projeto nascimento.csproj.CoreCompileInputs.cache
+C:\Users\6352573355\Desktop\projeto nascimento\obj\Debug\net7.0\projeto nascimento.dll
+C:\Users\6352573355\Desktop\projeto nascimento\obj\Debug\net7.0\refint\projeto nascimento.dll
+C:\Users\6352573355\Desktop\projeto nascimento\obj\Debug\net7.0\projeto nascimento.pdb
+C:\Users\6352573355\Desktop\projeto nascimento\obj\Debug\net7.0\projeto nascimento.genruntimeconfig.cache
+C:\Users\6352573355\Desktop\projeto nascimento\obj\Debug\net7.0\ref\projeto nascimento.dll
